@@ -11,32 +11,41 @@ export function Layout() {
     { path: '/videos', label: 'Vidéos', icon: Video },
     { path: '/forum', label: 'Forum', icon: MessageSquare },
     { path: '/map', label: 'Carte', icon: Map },
-    { path: '/parking', label: 'Parking', icon: ParkingCircle },
+    { path: '/parking', label: 'Stationnement', icon: ParkingCircle },
     { path: '/entreprise', label: 'Entreprise', icon: Building2 },
     { path: '/profile', label: 'Profil', icon: User },
   ];
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="eco-shell min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-50 shadow-sm">
+      <header className="sticky top-0 z-50 border-b border-emerald-900/10 bg-white/85 shadow-[0_8px_30px_rgba(16,35,27,0.06)] backdrop-blur-xl">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <Link to="/" className="flex items-center gap-2">
-              <Bike className="size-8 text-blue-600" />
-              <span className="font-bold text-xl text-gray-900">VéloConfiance</span>
+          <div className="flex min-h-16 items-center justify-between gap-4 py-2">
+            <Link to="/" className="group flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
+              <span className="flex size-11 items-center justify-center rounded-lg bg-emerald-700 text-white shadow-[0_12px_28px_rgba(15,107,69,0.28)] transition-transform duration-200 group-hover:scale-105">
+                <Bike className="size-6" />
+              </span>
+              <span className="leading-tight">
+                <span className="block font-bold text-xl text-emerald-950">L'AntreCyclistes</span>
+                <span className="hidden text-xs font-medium text-emerald-800 sm:block">Mobilité douce, ensemble</span>
+              </span>
             </Link>
 
-            <nav className="hidden md:flex items-center gap-1">
+            <nav className="hidden md:flex items-center gap-1.5">
               {navItems.slice(1).map((item) => {
                 const Icon = item.icon;
                 const isActive = location.pathname === item.path;
                 return (
                   <Link key={item.path} to={item.path}>
                     <Button
-                      variant={isActive ? 'default' : 'ghost'}
+                      variant={isActive ? 'secondary' : 'ghost'}
                       size="sm"
-                      className="gap-2"
+                      className={`gap-2 ${
+                        isActive
+                          ? 'bg-emerald-100 text-emerald-950 shadow-sm hover:bg-emerald-100'
+                          : 'text-emerald-950/75 hover:bg-emerald-50 hover:text-emerald-950'
+                      }`}
                     >
                       <Icon className="size-4" />
                       {item.label}
@@ -55,8 +64,8 @@ export function Layout() {
       </main>
 
       {/* Mobile Navigation */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg">
-        <div className="flex gap-1 overflow-x-auto p-2">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-emerald-900/10 bg-white/90 shadow-[0_-14px_40px_rgba(16,35,27,0.12)] backdrop-blur-xl md:hidden">
+        <div className="flex gap-2 overflow-x-auto px-3 pb-[calc(0.5rem+env(safe-area-inset-bottom))] pt-2">
           {navItems.slice(1).map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.path;
@@ -64,14 +73,14 @@ export function Layout() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex min-w-20 flex-col items-center justify-center p-2 rounded-lg transition-colors ${
-                  isActive 
-                    ? 'bg-blue-100 text-blue-600' 
-                    : 'text-gray-600 hover:bg-gray-100'
+                className={`flex min-w-20 flex-col items-center justify-center rounded-lg px-3 py-2 text-xs font-medium transition-[transform,color,background-color,box-shadow] duration-200 active:scale-[0.98] ${
+                  isActive
+                    ? 'bg-emerald-100 text-emerald-900 shadow-sm'
+                    : 'text-emerald-950/65 hover:bg-emerald-50 hover:text-emerald-950'
                 }`}
               >
                 <Icon className="size-5" />
-                <span className="text-xs mt-1">{item.label}</span>
+                <span className="mt-1">{item.label}</span>
               </Link>
             );
           })}
