@@ -23,7 +23,7 @@ export function Layout() {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2">
               <Bike className="size-8 text-blue-600" />
-              <span className="font-bold text-xl text-gray-900">VéloConfiance</span>
+              <span className="font-bold text-xl text-gray-900">AAAA</span>
             </Link>
 
             <nav className="hidden md:flex items-center gap-1">
