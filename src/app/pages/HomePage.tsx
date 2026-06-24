@@ -66,7 +66,7 @@ export function HomePage() {
   return (
     <div className="pb-20 md:pb-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="bg-gradient-to-br from-yellow-400 to-yellow-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
