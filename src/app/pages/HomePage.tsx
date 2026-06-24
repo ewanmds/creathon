@@ -118,8 +118,8 @@ export function HomePage() {
               Combler le vide entre « j'ai un vélo » et « je roule sereinement »
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Ce n'est pas le vélo qui bloque, c'est tout ce qui tourne autour. VéloConfiance 
-              réunit au même endroit tout ce dont vous avez besoin pour franchir le pas.
+              Ce n'est pas le vélo qui bloque, c'est tout ce qui tourne autour. L'AntreCyclistes réunit
+              au même endroit tout ce dont vous avez besoin pour franchir le pas.
             </p>
           </div>
 

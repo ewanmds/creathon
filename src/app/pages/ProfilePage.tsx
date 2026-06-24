@@ -56,7 +56,7 @@ export function ProfilePage() {
         completedRoutes: [],
         parkingReservations: [],
       });
-      toast.success('Bienvenue sur VéloConfiance !');
+      toast.success("Bienvenue sur L'AntreCyclistes !");
     }
     setIsEditing(false);
   };
@@ -109,7 +109,7 @@ export function ProfilePage() {
       <div className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Mon profil</h1>
         <p className="text-lg text-gray-600">
-          Suivez vos progrès et personnalisez votre expérience VéloConfiance
+          Suivez vos progrès et personnalisez votre expérience L'AntreCyclistes
         </p>
       </div>
 
