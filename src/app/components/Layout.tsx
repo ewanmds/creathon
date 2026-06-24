@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from 'react-router';
-import { Bike, Users, Video, MessageSquare, Map, ParkingCircle, User } from 'lucide-react';
+import { Bike, Building2, Users, Video, MessageSquare, Map, ParkingCircle, User } from 'lucide-react';
 import { Button } from './ui/button';
 
 export function Layout() {
@@ -12,6 +12,7 @@ export function Layout() {
     { path: '/forum', label: 'Forum', icon: MessageSquare },
     { path: '/map', label: 'Carte', icon: Map },
     { path: '/parking', label: 'Parking', icon: ParkingCircle },
+    { path: '/entreprise', label: 'Entreprise', icon: Building2 },
     { path: '/profile', label: 'Profil', icon: User },
   ];
 
@@ -55,7 +56,7 @@ export function Layout() {
 
       {/* Mobile Navigation */}
       <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg">
-        <div className="grid grid-cols-6 gap-1 p-2">
+        <div className="flex gap-1 overflow-x-auto p-2">
           {navItems.slice(1).map((item) => {
             const Icon = item.icon;
             const isActive = location.pathname === item.path;
@@ -63,7 +64,7 @@ export function Layout() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`flex flex-col items-center justify-center p-2 rounded-lg transition-colors ${
+                className={`flex min-w-20 flex-col items-center justify-center p-2 rounded-lg transition-colors ${
                   isActive 
                     ? 'bg-blue-100 text-blue-600' 
                     : 'text-gray-600 hover:bg-gray-100'
