@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { Users, Video, MessageSquare, Map, ParkingCircle, User, ArrowRight, CheckCircle } from 'lucide-react';
+import { Users, Video, MessageSquare, Map, ParkingCircle, User, ArrowRight, CheckCircle, Building2 } from 'lucide-react';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
@@ -45,6 +45,14 @@ export function HomePage() {
       link: '/parking',
       color: 'text-red-600',
       bgColor: 'bg-red-100',
+    },
+    {
+      icon: Building2,
+      title: 'Espace entreprise',
+      description: 'Activez un abonnement Premium avec groupes privés, ateliers et tableau de bord RSE',
+      link: '/entreprise',
+      color: 'text-blue-600',
+      bgColor: 'bg-blue-100',
     },
     {
       icon: User,
@@ -130,7 +138,7 @@ export function HomePage() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Six outils pour lever vos freins</h2>
+            <h2 className="text-3xl font-bold mb-4">Sept outils pour lever vos freins</h2>
             <p className="text-lg text-gray-600">
               Chaque fonctionnalité répond à un blocage précis identifié auprès des cyclistes
             </p>
