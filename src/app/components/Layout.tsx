@@ -22,7 +22,7 @@ export function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2">
-              <Bike className="size-8 text-blue-600" />
+              <Bike className="size-8 text-green-600" />
               <span className="font-bold text-xl text-gray-900">AAAA</span>
             </Link>
 
@@ -64,8 +64,8 @@ export function Layout() {
                 key={item.path}
                 to={item.path}
                 className={`flex flex-col items-center justify-center p-2 rounded-lg transition-colors ${
-                  isActive 
-                    ? 'bg-blue-100 text-blue-600' 
+                  isActive
+                    ? 'bg-green-100 text-green-600'
                     : 'text-gray-600 hover:bg-gray-100'
                 }`}
               >

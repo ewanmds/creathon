@@ -11,8 +11,8 @@ export function HomePage() {
       title: 'Rejoindre un groupe',
       description: 'Trouvez des personnes de votre niveau pour rouler ensemble sans pression',
       link: '/groups',
-      color: 'text-blue-600',
-      bgColor: 'bg-blue-100',
+      color: 'text-green-600',
+      bgColor: 'bg-green-100',
     },
     {
       icon: Video,
@@ -66,14 +66,14 @@ export function HomePage() {
   return (
     <div className="pb-20 md:pb-8">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-yellow-300 to-yellow-500 text-white">
+      <section className="bg-gradient-to-br from-green-600 to-green-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
                 Franchissez le pas avec confiance
               </h1>
-              <p className="text-xl mb-8 text-blue-100">
+              <p className="text-xl mb-8 text-green-100">
                 Votre vélo prend la poussière au garage ? VéloConfiance vous accompagne pour 
                 rouler sereinement, progresser entouré, et découvrir le plaisir du vélo.
               </p>
@@ -217,7 +217,7 @@ export function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="py-16 bg-gradient-to-br from-green-600 to-green-800 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Prêt à rouler sereinement ?
