@@ -80,7 +80,6 @@ export function HomePage() {
 
   const impactStats = [
     { value: '7', label: 'outils pour lever les freins' },
-    { value: '0', label: 'classement de performance' },
     { value: '24/7', label: 'ressources et carte accessibles' },
   ];
 
@@ -149,7 +148,7 @@ export function HomePage() {
         </div>
 
         <div className="eco-container pb-6">
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2">
             {impactStats.map((stat, index) => (
               <div
                 key={stat.label}
