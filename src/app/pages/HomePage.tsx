@@ -74,7 +74,7 @@ export function HomePage() {
                 Franchissez le pas avec confiance
               </h1>
               <p className="text-xl mb-8 text-green-100">
-                Votre vélo prend la poussière au garage ? VéloConfiance vous accompagne pour 
+                Votre vélo prend la poussière au garage ? L'AntreCyclistes vous accompagne pour
                 rouler sereinement, progresser entouré, et découvrir le plaisir du vélo.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -168,7 +168,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Ils ont franchi le pas</h2>
-            <p className="text-lg text-gray-600">Découvrez comment VéloConfiance les aide au quotidien</p>
+            <p className="text-lg text-gray-600">Découvrez comment L'AntreCyclistes les aide au quotidien</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
