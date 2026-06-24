@@ -11,7 +11,7 @@ export function Layout() {
     { path: '/videos', label: 'Vidéos', icon: Video },
     { path: '/forum', label: 'Forum', icon: MessageSquare },
     { path: '/map', label: 'Carte', icon: Map },
-    { path: '/parking', label: 'Parking', icon: ParkingCircle },
+    { path: '/parking', label: 'Stationnement', icon: ParkingCircle },
     { path: '/profile', label: 'Profil', icon: User },
   ];
 
@@ -23,7 +23,7 @@ export function Layout() {
           <div className="flex items-center justify-between h-16">
             <Link to="/" className="flex items-center gap-2">
               <Bike className="size-8 text-green-600" />
-              <span className="font-bold text-xl text-gray-900">AAAA</span>
+              <span className="font-bold text-xl text-gray-900">L'AntreCyclistes</span>
             </Link>
 
             <nav className="hidden md:flex items-center gap-1">
