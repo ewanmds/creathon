@@ -1,6 +1,7 @@
 import { Outlet, Link, useLocation } from 'react-router';
 import { Bike, Building2, Users, Video, MessageSquare, Map, ParkingCircle, User } from 'lucide-react';
 import { Button } from './ui/button';
+import logoMark from '../assets/antre-cyclistes-mark.png';
 
 export function Layout() {
   const location = useLocation();
@@ -23,8 +24,13 @@ export function Layout() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex min-h-16 items-center justify-between gap-4 py-2">
             <Link to="/" className="group flex items-center gap-3 rounded-lg focus-visible:outline-none focus-visible:ring-3 focus-visible:ring-ring/50">
-              <span className="flex size-11 items-center justify-center rounded-lg bg-emerald-700 text-white shadow-[0_12px_28px_rgba(15,107,69,0.28)] transition-transform duration-200 group-hover:scale-105">
-                <Bike className="size-6" />
+              <span className="flex size-12 shrink-0 items-center justify-center rounded-lg bg-[#fbf8e3] shadow-[0_12px_28px_rgba(15,107,69,0.18)] ring-1 ring-emerald-900/10 transition-transform duration-200 group-hover:scale-105">
+                <img
+                  src={logoMark}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-8 w-10 object-contain"
+                />
               </span>
               <span className="leading-tight">
                 <span className="block font-bold text-xl text-emerald-950">L'AntreCyclistes</span>
